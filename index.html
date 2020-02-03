@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<body background="old-wood-texture.jpg"></body>
+<meta name="keywords" content="rpg, strona, szkoła"/>
+<title>strona główna</title>
+<SCRIPT LANGUAGE="JavaScript">
+
+var theImages = new Array()
+
+theImages[0] = 'ciekawaostka 1.png'
+theImages[1] = 'ciekawaostka 2.png'
+theImages[2] = 'ciekawaostka 3.png'
+theImages[3] = 'ciekawaostka 4.png'
+theImages[4] = 'ciekawaostka 5.png'
+
+
+var j = 0
+var p = theImages.length;
+var preBuffer = new Array()
+for (i = 0; i < p; i++){
+   preBuffer[i] = new Image()
+   preBuffer[i].src = theImages[i]
+}
+var whichImage = Math.round(Math.random()*(p-1));
+function showImage(){
+document.write('<img src="'+theImages[whichImage]+'">');
+}
+
+</script>
+</head>
+<body>
+<center><img src="monety.png" height="280" width="1400"></center>
+<center><div>
+<a href="index.html"> <img src="strona_główna1.png"  onmouseover="this.src = 'strona_główna2.png'" onmousedown="this.src = 'strona_główna3.png' " onmouseout="this.src = 'strona_główna1.png'"> </a>
+<a href="dlagraczy.html"> <img src="dlagraczy1.png"  onmouseover="this.src = 'dlagraczy2.png'" onmousedown="this.src = 'dlagraczy3.png' " onmouseout="this.src = 'dlagraczy1.png'"> </a>
+<a href="rpgi.html"> <img src="rpgi1.png"  onmouseover="this.src = 'rpgi2.png'" onmousedown="this.src = 'rpgi3.png' " onmouseout="this.src = 'rpgi1.png'"> </a>
+<a href="galeria.html"> <img src="galeria1.png"  onmouseover="this.src = 'galeria2.png'" onmousedown="this.src = 'galeria3.png' " onmouseout="this.src = 'galeria1.png'"> </a>
+</div></center>
+<center><font size="7" face="Arial" color="white" size="12"><b>Sesje</b></font></center>
+<center><div>
+<img src="teskt2.png" >
+</div></center>
+<center><div>
+<img src="teskt1.png" >
+</div></center>
+<center><div>
+<SCRIPT LANGUAGE="JavaScript">
+showImage();
+</script>
+</div></center>
+</body>
+</html>
